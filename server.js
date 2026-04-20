@@ -11,7 +11,7 @@ const app = express();
 // You can have subdirectories in 'dist' for better organization.
 // For example, you might have 'dist/css', 'dist/js', etc.
 // The static files will be served at the root URL (e.g., http://localhost:8080/)
-app.use(express.static(__dirname + '/dist'));
+app.use(express.static(__dirname));
 
 // serve index.html for the root path
 app.get("/", function (request, response) {
